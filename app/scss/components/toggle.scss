@@ -1,10 +1,28 @@
 @use '../util' as *;
 
 .toggle{
+    border:none;
+    //& means inherit so &_wrapper == toggle_wrapper//
+    &_wrapper{
+
+    }
+
+    input[type="radio]{
+
+    }
+
+    &_background{
+
+    }
+
     &_button{
         border-radius: 50%;
         width:rem(16);
         height:rem(16);
         background-color: var(--toggle);
+    }
+
+    label{
+
     }
 }
